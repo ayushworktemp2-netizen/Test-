@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color-scheme: light;
+}
+
+body {
+  background-color: #F8FAFC;
+  color: #0F172A;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Premium Card System */
+.saas-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.05);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.saas-card:hover {
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+  border-color: #CBD5E1;
+}
+
+.saas-card-interactive {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.saas-card-interactive:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px -6px rgba(99, 102, 241, 0.12);
+  border-color: #C7D2FE;
+}
+
+/* Text Gradients */
+.brand-gradient-text {
+  background: linear-gradient(135deg, #4338CA 0%, #3B82F6 50%, #8B5CF6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-gradient-text {
+  background: linear-gradient(135deg, #2563EB 0%, #4F46E5 50%, #7C3AED 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Map route animation */
+@keyframes routePulse {
+  0% {
+    stroke-dashoffset: 24;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-route-path {
+  stroke-dasharray: 6 6;
+  animation: routePulse 1.2s linear infinite;
+}
+
+/* High Contrast Mode overrides */
+.high-contrast {
+  background-color: #000000 !important;
+  color: #FFFFFF !important;
+}
+
+.high-contrast .saas-card,
+.high-contrast .saas-card-interactive {
+  background: #121212 !important;
+  border: 2px solid #FFFFFF !important;
+  color: #FFFFFF !important;
+}
+
+.high-contrast p,
+.high-contrast span,
+.high-contrast h1,
+.high-contrast h2,
+.high-contrast h3,
+.high-contrast h4 {
+  color: #FFFFFF !important;
+}
+
+.high-contrast button {
+  border: 2px solid #FFFF00 !important;
+}
+
+/* Large font mode modifier */
+.large-text {
+  font-size: 1.125rem;
+}
+.large-text h1 { font-size: 2.75rem; }
+.large-text h2 { font-size: 2.25rem; }
+.large-text h3 { font-size: 1.75rem; }
+.large-text p, .large-text button, .large-text span { font-size: 1.05rem; }
