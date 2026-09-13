@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEventContext } from '../context/EventContext';
-import type { AttendeeTab, OrganizerTab } from '../types';
+import type { AttendeeTab } from '../types';
 import { 
   Users, 
   ShieldAlert, 
@@ -8,7 +8,6 @@ import {
   ArrowRight, 
   Compass, 
   Sparkles,
-  BarChart3,
   Bell,
   CheckCircle2,
   Calendar,

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useEventContext } from '../../context/EventContext';
-import { Radio, Users, ShieldAlert, Sparkles, RefreshCw, Layers, LogIn, UserCheck, Activity, Menu, X, LogOut } from 'lucide-react';
+import { Radio, Users, ShieldAlert, Sparkles, RefreshCw, Layers, LogIn, Activity, Menu, X, LogOut } from 'lucide-react';
 
 export const DemoHeader: React.FC = () => {
   const { 

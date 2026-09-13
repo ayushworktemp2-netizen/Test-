@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useEventContext } from '../../context/EventContext';
-import { X, Users, ShieldAlert, LogIn, Sparkles, CheckCircle2, Lock } from 'lucide-react';
+import { X, Users, ShieldAlert, LogIn, Sparkles, Lock } from 'lucide-react';
 
 export const DemoLoginModal: React.FC = () => {
   const { isLoginModalOpen, setIsLoginModalOpen, loginModalRole, loginAsDemoUser } = useEventContext();
